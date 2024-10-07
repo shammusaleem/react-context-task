@@ -1,0 +1,157 @@
+.container { 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Product list */
+.product-list {
+  flex: 3.2; /* Width of the product list */
+  margin-right: 20px;
+}
+
+/* Product card styles */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 10px; /* Reduced margin-bottom */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  min-height: auto; /* Let the height adjust based on the content */
+}
+
+/* Product Image */
+.product-card img {
+  width: 70px; /* Smaller image size */
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Product name and description styling */
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+/* Product price under the description */
+.product-price {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+/* Add to Cart Button aligned to the right */
+.add-to-cart-btn {
+  padding: 5px 10px; /* Reduced padding */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Cart summary styles */
+.cart-summary {
+  flex: 1.8; /* Decreased width of the cart summary */
+  padding: 15px; /* Reduced padding */
+  border: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  max-width: 400px; /* Decreased max width */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.cart-item-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cart-item-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+/* Quantity control with right alignment */
+.quantity-control {
+  display: flex;
+  justify-content: flex-end; /* Right-align the buttons */
+  margin-bottom: 5px;
+  padding-right: 10px; 
+  align-self: flex-end;
+  /* Add extra padding to move the buttons towards the right */
+}
+
+.quantity-control button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 3px 7px; /* Smaller buttons */
+  font-size: 12px; /* Reduced font size */
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.quantity-control button:hover {
+  background-color: #0056b3;
+}
+
+
+.price-summary {
+  margin-top: 20px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.total-row {
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
